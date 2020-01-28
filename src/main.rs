@@ -10,7 +10,7 @@
 //! Basic chat like example that demonstrates how to connect with peers and exchange data.
 
 use bytes::Bytes;
-use crossbeam::channel as mpmc;
+use crossbeam_channel as mpmc;
 use quic_p2p::{Builder, Config, Event, Peer, QuicP2p};
 use rand::{self, RngCore};
 use rustyline::config::Configurer;
